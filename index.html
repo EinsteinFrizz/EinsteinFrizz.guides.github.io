@@ -105,10 +105,10 @@ h1 {
 
 <script>
 function passwordCheck() {
-    var x = String(document.getElementById("pword"));
+    var x = document.getElementById("pword");
     var text = "";
         if (x !== null) {
-            if (x == "amber") {
+            if (String(x) == "amber") {
                 text = "Correct!";
             }
             else {
