@@ -39,6 +39,32 @@ h1 {
     visibility: hidden;
     animation-fill-mode: forwards;
 }
+.typewriter3 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid chartreuse; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.typewriter2 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid chartreuse; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -62,8 +88,13 @@ h1 {
         <p>Hacker: your task is to hack in to Amber's account.</p>
     </div>
     <div class="typewriter2">
-        <p>It's likely that their password is easily crackable.<br>
-        If I give you some intel on them, you'll figure it out, no sweat.</p>
+        <p>It's likely that their password is easily crackable.</p>
+    </div>
+    <div class="typewriter3">
+        <p>The agency will supply you a file with Amber's information.</p>
+    </div>
+    <div class="typewriter4">
+        <p>From there, crack their password.</p>
     </div>
 </body>
 </html>
