@@ -231,7 +231,7 @@ function passwordCheck() {
     var x = document.getElementById("pass").value;
     var text = "";
         if (x !== null) {
-            if (x == "tux22peek") {
+            if (x.toLowercase() == "tux22peek") {
                 text = "Correct!";
             }
             else {
