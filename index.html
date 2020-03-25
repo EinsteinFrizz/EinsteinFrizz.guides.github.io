@@ -228,10 +228,10 @@ input[type=submit] {
 
 <script>
 function passwordCheck() {
-    var x = document.getElementById("pass").value.ignoreCase;
+    var x = document.getElementById("pass").value;
     var text = "";
         if (x !== null) {
-            if (x == "tux22peek") {
+            if (x.ignoreCase == "tux22peek") {
                 text = "Correct!";
             }
             else {
