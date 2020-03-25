@@ -230,13 +230,20 @@ input[type=submit] {
 function passwordCheck() {
     var x = document.getElementById("pass").value;
     var text = "";
+    var n = 0;
     x = x.toLowerCase();
         if (x !== null) {
             if (x == "tux22peek") {
                 text = "Correct! Have a think about what Amber could do to improve their password. What can you do to improve yours? Write a comment on the Facebook post for this clause.";
             }
             else {
-                text = "Incorrect - try again!";
+                n += 1;
+                if (n % 2 == 0) {
+                    text = "Incorrect 1";
+                }
+                else {
+                    text = "Incorrect 2";
+                }
             }
         }
         else {
