@@ -228,7 +228,7 @@ input[type=submit] {
 
 <script>
 function passwordCheck() {
-    var x = document.getElementById("pass").value;
+    var x = document.getElementById("pass").value.ignoreCase;
     var text = "";
         if (x !== null) {
             if (x == "tux22peek") {
