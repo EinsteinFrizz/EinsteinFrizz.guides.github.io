@@ -137,7 +137,6 @@ img {
 function passwordCheck() {
     var x = document.getElementById("pass").value;
     var text = "";
-    console.log(x);
         if (x !== null) {
             if (x == "amber") {
                 text = "Correct!";
@@ -149,6 +148,7 @@ function passwordCheck() {
         else {
             text = "It looks like you didn't type anything into the field.";
         }
+    return false; //stops form submission and resetting page
     document.getElementById("message").innerHTML = text;
     document.getElementById("test").innerHTML = x;
 }
