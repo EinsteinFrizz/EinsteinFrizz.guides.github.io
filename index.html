@@ -203,7 +203,7 @@ input[type=submit] {
     <ul style="list-style-type: none">
         <li><span style="color: chartreuse">></span> amber22</li>
         <li><span style="color: chartreuse">></span> amber22peek</li>
-        <li><span style="color: chartreuse">></span> 22tuxpeek</li>
+        <li><span style="color: chartreuse">></span> tuxpeek</li>
         <li><span style="color: chartreuse">></span> amber2203</li>
     </ul>
 </div>
@@ -222,18 +222,17 @@ input[type=submit] {
 <p>Note: password is not case-sensitive, i.e. 'Amber' is the same as 'amber'.</p>
 
 <p id="message"></p>
-<p id="test"></p>
 
 <script>
 function passwordCheck() {
     var x = document.getElementById("pass").value;
     var text = "";
         if (x !== null) {
-            if (x == "amber") {
+            if (x == "tux22peek") {
                 text = "Correct!";
             }
             else {
-                text = "Incorrect";
+                text = "Incorrect - try again!";
             }
         }
         else {
