@@ -16,12 +16,20 @@ h1 {
     font-size: 2em;
     color: chartreuse;
 }
-form {
-    /* nothing here yet */
-}
 img {
     float: left;
 }
+
+input[type=text] {
+    width: 50%;
+    padding: 10px;
+}
+input[type=submit] {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(30, 30, 30);
+    background-color: chartreuse;
+}
+
 .button {
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
@@ -126,7 +134,7 @@ img {
     <p></p>
 
 <form id="pword" onsubmit="return passwordCheck();">
-    Password: <input type="text" id="pass"> &nbsp;&nbsp;
+    Password: <input type="text" id="pass"> &nbsp;
     <input type="submit">
 </form>
 
