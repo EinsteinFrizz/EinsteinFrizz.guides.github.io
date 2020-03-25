@@ -95,6 +95,32 @@ input[type=submit] {
     visibility: hidden;
     animation-fill-mode: forwards;
 }
+.typewriter5 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid chartreuse; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-delay: 10s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.typewriter6 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid chartreuse; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-delay: 12s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -138,6 +164,13 @@ input[type=submit] {
 
     <p></p>
     <p></p>
+
+<div class="typewriter5">
+    <p>Previous hackers have tried to get into Amber's account, with no success.</p>
+</div>
+<div class="typewriter6">
+    <p>The passwords they tried include:</p>
+</div>
 
 <form id="pword" onsubmit="return passwordCheck();">
     Password: <input type="text" id="pass"> &nbsp;
