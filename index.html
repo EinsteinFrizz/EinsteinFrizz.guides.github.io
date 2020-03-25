@@ -230,8 +230,9 @@ input[type=submit] {
 function passwordCheck() {
     var x = document.getElementById("pass").value;
     var text = "";
+    x = x.toLowerCase();
         if (x !== null) {
-            if (x.toLowercase() == "tux22peek") {
+            if (x == "tux22peek") {
                 text = "Correct!";
             }
             else {
